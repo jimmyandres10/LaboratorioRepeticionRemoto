@@ -1,17 +1,28 @@
 def main():
 
+#En donde se sabe que el discriminante d=√(b^2-4ac )
+#tipo    ax2 + bx + c
+
     import math
-    print("escriba dos numeros, para calcular el cuadrado del primero y el doble, la suma de los dos y la raiz del segundo")
-    numero_b = float(input("Escriba un número : ")) 
-    numero_d = float(input("Escriba un número : "))
+    print("da valor a, da valor b, valor c, para hacer la operacion de ax2 + bx + c")
 
-    numero_s = numero_b + numero_d
-    numero_c = math.sqrt(numero_d)
-
-    print(f"el cuadrado del primer numero: {numero_b**2}")
-    print(f"la raiz del segundo numero: {numero_c}")
-    print(f"la suma de esos dos numeros: {numero_s}")
-    print(f"el doble del primer numero: {numero_b*2}")
-
+    letra_a = float(input("Escriba letra a: ")) 
+    letra_b = float(input("Escriba letra b: "))
+    letra_c = float(input("Escriba letra c: "))
+    a = (letra_b**2)
+    b = (4*(letra_a*letra_c))
+    r = (a-b)
+    d = math.sqrt(r)
+    x1 = ((-letra_b) + math.sqrt(d))/(2*letra_a)
+    x2 = ((-letra_b) - math.sqrt(d))/(2*letra_a)
+    d2 = (-letra_b)/(2*letra_a)
+    if d > 0:
+        print(f"su respuesa en suma es {x1}")
+        print(f"su respuesa en resta es {x2}")
+        if d == 0:
+            print(f"su respuesta es: {d2}" )
+    else:
+        print("no existe respuesta en numeros reales")
+        
 if __name__ == "__main__":
     main()
