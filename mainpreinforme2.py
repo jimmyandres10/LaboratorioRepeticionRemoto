@@ -11,7 +11,9 @@ def main():
             
     else:
             final_1 = (cant_n/numero_de_notas)
-            print(f"esta es tu nota{final_1}")
+
+
+            print(f"esta es tu nota{final_1} ")
 
 
 
