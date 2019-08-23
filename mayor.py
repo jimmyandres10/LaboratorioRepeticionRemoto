@@ -9,7 +9,7 @@ def main():
     
     for i in range (1,11):
 
-        a = int(input(f"digite el {i} numero"))
+        a = int(input(f"digite el {i} numero "))
     
         if a > 0 :
             print(f"el numero {a} es mayor a 0")
